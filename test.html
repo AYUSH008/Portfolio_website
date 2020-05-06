@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="typed.min.js"></script>
+    <style>
+    h1{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+ <h1 id="typed_letter"></h1>
+
+    
+    <script>
+        $('document').ready(function(){
+          var typed = new Typed('#typed_letter',{
+                 strings:["I am Ayush Ashatkar","I am a Web Devleoper","I love Travel"],
+                 backSpeed: 40,
+                 typeSpeed: 40,
+                 loop: true,
+                 shuffle: true
+      
+          });
+      });
+    </script> 
+</body>
+</html>

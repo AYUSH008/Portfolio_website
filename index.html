@@ -12,8 +12,8 @@
 <body>
     
     <header class="header">
-        <script src="typed/typed.min.js"></script>
-        <div class="navigation">
+        <h1 id="typed_letter"></h1>
+         <div class="navigation">
             <input type="checkbox" class="check" id="list">
             <label for="list" class="navbar">
                 <span class="hamburger"></span>
@@ -31,6 +31,19 @@
                 <div class="navbar_back"></div>
         </div>
     </header>
+      
+      <script>
+          $('document').ready(function(){
+            var typed = new Typed('#typed_letter',{
+                   strings:["I am Ayush Ashatkar","I am a Web Devleoper","I love Travel"],
+                   backSpeed: 40,
+                   typeSpeed: 40,
+                   loop: true,
+                   shuffle: false
+        
+            });
+        });
+      </script> 
 
 </body>
 </html>
