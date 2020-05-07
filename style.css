@@ -174,3 +174,57 @@ h1{
     text-shadow: 0 2px 5px gray;
     color:#745642;
 }
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-areas: "image" "text" "stats";
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5x 15px rgba(0,0,0,0.9);
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+}
+.card_image{
+    grid-area: image;
+    background: url(image3.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card_text{
+    grid-area: text;
+    margin: 25px;
+}
+.card_text .date{
+    color: pink;
+    font-size: 13px;
+}
+.card_text p {
+    color : grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+.card_text h2{
+    margin-top: 0px;
+    font-size: 28px;
+}
+.card_status{
+    grid-area: status;
+}
+.section1{
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #BEB5AF;
+overflow: hidden;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
